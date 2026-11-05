@@ -307,6 +307,34 @@
   .bonus-sec .card h3{color:var(--accent);}
   .bonus-val{font-size:.9rem;color:var(--muted);margin:-2px 0 8px;}
   .bonus-val strong{color:var(--green);background:#e5f3ea;padding:2px 10px;border-radius:12px;margin-left:4px;}
+  .topbar{background:linear-gradient(90deg,#8e1b16,#c0302a,#8e1b16);color:#fff;text-align:center;font-size:.9rem;font-weight:600;padding:9px 14px;}
+  .topbar strong{color:var(--yellow);}
+  .hero{position:relative;}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:radial-gradient(#e9b9b0 1.5px,transparent 2px);background-size:46px 46px;}
+  .hero .container{position:relative;}
+  .sec-cor{position:relative;}
+  .sec-cor::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.3;
+    background-image:radial-gradient(#fff 1.5px,transparent 2px),radial-gradient(#fff 1px,transparent 1.5px);
+    background-size:90px 90px,50px 50px;background-position:0 0,25px 30px;}
+  .sec-cor .container{position:relative;}
+  .sec-cor .section-title{color:#fff;}
+  .sec-cor .section-sub{color:#f6e3e1;}
+  .sec-cor .cta-btn{background:var(--yellow);color:#5a1414!important;box-shadow:0 10px 28px rgba(0,0,0,.3);}
+  .sec-red{background:radial-gradient(circle at 20% 10%,#d23a32 0%,#a3221c 55%,#7e1712 100%);}
+  .sec-navy{background:radial-gradient(circle at 80% 10%,#2c4f9a 0%,#1a3270 55%,#10224f 100%);}
+  .sec-cor .carousel-wrap{-webkit-mask-image:none;mask-image:none;}
+  .sec-cor .carousel-item{border:none;box-shadow:0 8px 22px rgba(0,0,0,.3);}
+  .sec-cor .chip{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.35);color:#fff;}
+  .sec-cor .card{border:none;border-top:6px solid var(--yellow);box-shadow:0 12px 30px rgba(0,0,0,.25);}
+  .sec-cor .card .tag{background:var(--accent);color:#fff;}
+  .sec-cor .offer{background:#fff;border:3px solid var(--yellow);}
+  .sec-cor .offer .cta-sub{color:var(--muted);}
+  .recebe .card:nth-child(1){border-top:6px solid var(--accent);}
+  .recebe .card:nth-child(2){border-top:6px solid var(--green);}
+  .recebe .card:nth-child(3){border-top:6px solid #1a3270;}
+  .recebe .card:nth-child(4){border-top:6px solid #c58a1c;}
+  .recebe .card h3{color:var(--accent);}
   .bonus-sec .cta-btn{background:var(--yellow);color:#5a1414!important;box-shadow:0 10px 28px rgba(0,0,0,.3);}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:620px;margin:0 auto;}
   .gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);}
@@ -316,6 +344,8 @@
 </style>
 </head>
 <body>
+
+<div class="topbar">🎄 Oferta especial de Natal: de <s>R$ 54</s> por <strong>R$ 14,99</strong></div>
 
 <header>
   <span class="logo-emoji">🎄</span>
@@ -348,7 +378,7 @@
 </section>
 
 <!-- OLHA O QUE VOCÊ VAI IMPRIMIR -->
-<section class="benefits">
+<section class="sec-cor sec-red">
   <div class="container">
     <p class="section-title">Olha os cartões que você vai imprimir...</p>
     <div class="carousel-wrap">
@@ -507,27 +537,27 @@
 </section>
 
 <!-- MANEIRAS DE LUCRAR -->
-<section class="benefits">
+<section class="sec-cor sec-navy">
   <div class="container">
     <p class="section-title">4 Maneiras de lucrar com o kit 300 Moldes de Cartões de Natal</p>
     <div class="cards">
       <div class="card">
-        <span class="tag">01</span>
+        <span class="tag">🛍️ 01</span>
         <h3>Venda de cartões</h3>
         <p>Imprima os modelos, monte kits com envelope e venda pelo WhatsApp, Instagram, marketplaces ou para pessoas da sua região.</p>
       </div>
       <div class="card">
-        <span class="tag">02</span>
+        <span class="tag">🧺 02</span>
         <h3>Cestas de Natal</h3>
         <p>Monte cestas e caixinhas de presente com o cartão personalizado. O cartão deixa a cesta mais caprichada e valoriza o preço.</p>
       </div>
       <div class="card">
-        <span class="tag">03</span>
+        <span class="tag">🏢 03</span>
         <h3>Cartões para empresas</h3>
         <p>Lojas, escritórios e prestadores de serviço entregam cartões aos clientes no fim do ano. Você oferece os modelos com espaço para o logo.</p>
       </div>
       <div class="card">
-        <span class="tag">04</span>
+        <span class="tag">🏫 04</span>
         <h3>Escolas e catequese</h3>
         <p>Cartões da turma para a professora, da escola para as famílias e modelos para colorir que as crianças pintam e entregam.</p>
       </div>
@@ -546,27 +576,27 @@
 </section>
 
 <!-- O QUE VOCÊ RECEBE -->
-<section class="benefits">
+<section class="benefits recebe">
   <div class="container">
     <p class="section-title">O que você recebe hoje</p>
     <div class="cards">
       <div class="card">
-        <span class="tag">Arquivo principal</span>
+        <span class="tag">🎄 Arquivo principal</span>
         <h3>300 Moldes de Cartões de Natal</h3>
         <p>Uma coleção com 300 cartões em 10 estilos para você imprimir: clássicos, elegantes, fofos, religiosos, para empresas, para a escola, para colorir e muito mais.</p>
       </div>
       <div class="card">
-        <span class="tag">Praticidade</span>
+        <span class="tag">✂️ Praticidade</span>
         <h3>Cartões prontos</h3>
         <p>Em vez de perder horas desenhando ou procurando modelos, você escolhe, imprime e dobra. Frente e verso já vêm no lugar certo.</p>
       </div>
       <div class="card">
-        <span class="tag">Sem bloqueio</span>
+        <span class="tag">💌 Sem bloqueio</span>
         <h3>60 mensagens prontas</h3>
         <p>Não sabe o que escrever? Escolha uma das 60 mensagens para família, amigos, clientes e professores.</p>
       </div>
       <div class="card">
-        <span class="tag">Acabamento</span>
+        <span class="tag">🎁 Acabamento</span>
         <h3>27 etiquetas de presente</h3>
         <p>Etiquetas para pendurar nos presentes, combinando com os cartões, para deixar tudo com cara de loja.</p>
       </div>
@@ -629,7 +659,7 @@
 </section>
 
 <!-- QUANTO VAI CUSTAR -->
-<section id="oferta">
+<section id="oferta" class="sec-cor sec-red">
   <div class="container">
     <p class="section-title">Quanto tudo vai custar?</p>
     <p class="section-sub">
