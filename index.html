@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>300 Moldes de Cartões de Natal para Imprimir</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%84%3C/text%3E%3C/svg%3E">
+
+<!-- Meta Pixel: colocar aqui o pixel da oferta de Natal (não usar o pixel das flores) -->
+
+<script>
+  // Clique nos botões "Comprar": avisa o pixel, se houver um instalado.
+  document.addEventListener("click", function (ev) {
+    var btn = ev.target.closest(".cta-btn");
+    if (btn && typeof fbq === "function") { try { fbq("track", "InitiateCheckout"); } catch (e) {} }
+  });
+</script>
+
+<style>
+  :root{
+    --accent:#b3261e;
+    --accent-light:#e0675d;
+    --cream:#faf3ea;
+    --cream-2:#f2e6d8;
+    --text:#3a2f2a;
+    --muted:#71655d;
+    --pink:#e0457b;
+    --pink-light:#f2a0bc;
+    --yellow:#f4c430;
+    --green:#1f6b45;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    line-height:1.5;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  .container{max-width:880px;margin:0 auto;padding:0 20px;}
+  section{padding:64px 0;}
+  @media(max-width:640px){section{padding:44px 0;}}
+
+  /* ---------- flor CSS (logo) ---------- */
+  .flower{position:relative;width:100px;height:100px;}
+  .flower .petal{
+    position:absolute;width:50%;height:50%;top:0;left:50%;
+    border-radius:50% 0 50% 50%;
+    transform-origin:0% 100%;
+  }
+  .flower .center{
+    position:absolute;width:32%;height:32%;top:34%;left:34%;
+    background:var(--yellow);border-radius:50%;
+    box-shadow:0 0 0 3px rgba(255,255,255,.6) inset;
+  }
+  .flower.f-terra .petal{background:var(--accent-light);}
+
+  /* ---------- header ---------- */
+  header{
+    padding:18px 20px;
+    display:flex;align-items:center;justify-content:center;
+    gap:10px;
+  }
+  header .logo-flower{width:34px;height:34px;}
+  header .brand{font-weight:700;font-size:1.05rem;color:var(--accent);letter-spacing:.2px;}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:linear-gradient(180deg,var(--cream-2) 0%, var(--cream) 100%);
+    text-align:center;
+    padding-top:24px;
+  }
+  .hero h1{
+    font-size:clamp(1.8rem,5vw,2.7rem);
+    color:var(--accent);
+    font-weight:800;
+    line-height:1.15;
+    margin:0 auto 16px;
+    max-width:680px;
+  }
+  .hero p.sub{
+    font-size:1.08rem;color:var(--muted);max-width:580px;margin:0 auto 30px;
+  }
+  .price-box{
+    display:inline-flex;flex-direction:column;align-items:center;gap:2px;
+    background:var(--white);border:2px solid var(--accent);border-radius:18px;
+    padding:18px 34px;margin-bottom:22px;
+    box-shadow:0 8px 24px rgba(179,38,30,.12);
+  }
+  .price-box .old{color:var(--muted);text-decoration:line-through;font-size:1rem;}
+  .price-box .new{color:var(--accent);font-size:2.4rem;font-weight:800;line-height:1.1;}
+  .price-box .new small{font-size:1.1rem;font-weight:600;}
+  .price-box .installment{color:var(--muted);font-size:.85rem;}
+
+  /* ---------- animação de chamar atenção no preço ---------- */
+  @media (prefers-reduced-motion: no-preference){
+    .price-box--attention{animation:price-pulse 1.6s ease-in-out infinite;}
+    .price-box--attention.price-box{animation:price-pulse-box 1.6s ease-in-out infinite;}
+  }
+  @keyframes price-pulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.07);}
+  }
+  @keyframes price-pulse-box{
+    0%,100%{transform:scale(1);box-shadow:0 8px 24px rgba(179,38,30,.12);}
+    50%{transform:scale(1.025);box-shadow:0 8px 34px rgba(179,38,30,.4);}
+  }
+
+  .cta-btn{
+    display:inline-block;background:var(--accent);color:var(--white)!important;
+    font-weight:700;font-size:1.15rem;padding:18px 42px;border-radius:50px;
+    box-shadow:0 10px 28px rgba(179,38,30,.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:none;cursor:pointer;
+  }
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(179,38,30,.42);}
+  .cta-sub{margin-top:10px;font-size:.82rem;color:var(--muted);}
+
+  /* ---------- hero photo ---------- */
+  .hero-photo{
+    max-width:460px;margin:0 auto 30px;border-radius:20px;overflow:hidden;
+    box-shadow:0 16px 40px rgba(179,38,30,.18);border:6px solid var(--white);
+  }
+  .hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+
+  .hero-info{text-align:center;margin:0 auto 26px;}
+  .hero-pages-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    color:var(--muted);font-size:.82rem;font-weight:600;
+    margin:0 0 16px;
+  }
+  .hero-email-title{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    color:var(--accent);font-size:1.1rem;font-weight:700;
+    letter-spacing:.2px;margin:0 0 6px;
+  }
+  .hero-email-sub{
+    color:var(--muted);font-size:.85rem;line-height:1.5;
+    max-width:340px;margin:0 auto;
+  }
+
+  /* ---------- vídeo ---------- */
+  .video-box{
+    max-width:460px;margin:0 auto;border-radius:20px;overflow:hidden;
+    box-shadow:0 12px 32px rgba(179,38,30,.15);border:6px solid var(--white);
+  }
+  .video-box video{width:100%;height:auto;display:block;}
+
+  /* ---------- galeria de modelos (carrossel infinito) ---------- */
+  .carousel-wrap{
+    position:relative;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);
+  }
+  .carousel{
+    display:flex;gap:14px;width:max-content;
+    animation:carousel-scroll 32s linear infinite;
+  }
+  .carousel-wrap:hover .carousel{animation-play-state:paused;}
+  @keyframes carousel-scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .carousel-item{
+    flex:0 0 auto;width:200px;
+    background:var(--white);border-radius:14px;overflow:hidden;
+    border:1px solid #eee1d3;box-shadow:0 4px 14px rgba(0,0,0,.05);
+  }
+  @media(max-width:640px){.carousel-item{width:150px;}}
+  .carousel-item img{width:100%;aspect-ratio:581/820;object-fit:cover;display:block;}
+  .carousel-item .cap{padding:10px 12px;font-size:.85rem;font-weight:600;color:var(--text);text-align:center;}
+
+  .chip-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:640px;margin:22px auto 0;}
+  .chip{
+    background:var(--white);border:1px solid #eee1d3;color:var(--text);
+    font-size:.85rem;font-weight:600;padding:8px 16px;border-radius:20px;
+  }
+
+  /* ---------- como funciona ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  @media(max-width:640px){.steps{grid-template-columns:1fr;}}
+  .step{text-align:center;}
+  .step .step-photo{
+    border-radius:14px;overflow:hidden;margin-bottom:14px;
+    border:1px solid #eee1d3;box-shadow:0 4px 14px rgba(0,0,0,.05);
+  }
+  .step .step-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .step .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;
+    font-weight:700;font-size:.85rem;margin-bottom:8px;
+  }
+  .step h3{font-size:1rem;margin-bottom:4px;}
+  .step p{color:var(--muted);font-size:.88rem;}
+
+  /* ---------- seção o que recebe ---------- */
+  .section-title{
+    text-align:center;font-size:clamp(1.4rem,4vw,1.9rem);color:var(--accent);
+    font-weight:800;margin-bottom:8px;
+  }
+  .section-sub{text-align:center;color:var(--muted);max-width:560px;margin:0 auto 36px;}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media(max-width:640px){.cards{grid-template-columns:1fr;}}
+  .card{
+    background:var(--white);border-radius:16px;padding:24px;
+    box-shadow:0 4px 18px rgba(0,0,0,.05);
+    border:1px solid #eee1d3;
+  }
+  .card .bonus-photo{
+    border-radius:10px;overflow:hidden;margin-bottom:14px;
+    border:1px solid #eee1d3;
+  }
+  .card .bonus-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .card .tag{
+    display:inline-block;background:var(--cream-2);color:var(--accent);
+    font-size:.72rem;font-weight:700;letter-spacing:.4px;padding:4px 10px;
+    border-radius:20px;margin-bottom:10px;text-transform:uppercase;
+  }
+  .card h3{font-size:1.1rem;margin-bottom:6px;color:var(--text);}
+  .card p{color:var(--muted);font-size:.92rem;}
+  .card .card-list{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:5px;}
+  .card .card-list li{color:var(--muted);font-size:.92rem;padding-left:16px;position:relative;}
+  .card .card-list li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--accent-light);}
+
+  /* ---------- benefícios ---------- */
+  .benefits{background:var(--white);}
+
+  /* ---------- caixa de destaque ---------- */
+  .info-box{
+    max-width:600px;margin:0 auto;text-align:center;
+    background:var(--white);border-radius:16px;padding:30px;border:1px solid #eee1d3;
+  }
+  .info-box h3{color:var(--accent);font-size:1.25rem;margin-bottom:10px;}
+  .info-box p{color:var(--muted);}
+
+  /* ---------- oferta ---------- */
+  .offer{
+    background:linear-gradient(160deg,#fff 0%, var(--cream-2) 100%);
+    border-radius:24px;padding:40px 28px;
+    border:1px solid var(--accent-light);
+    box-shadow:0 8px 30px rgba(179,38,30,.08);
+  }
+
+  /* ---------- garantia ---------- */
+  .guarantee{
+    display:flex;align-items:center;gap:18px;max-width:560px;margin:0 auto;
+    background:var(--white);border-radius:16px;padding:22px;border:1px solid #eee1d3;
+  }
+  .guarantee .seal{
+    flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--green);
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:1.6rem;font-weight:800;
+  }
+  .guarantee p{font-size:.9rem;color:var(--muted);min-width:0;}
+  .guarantee strong{color:var(--text);}
+
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:.78rem;}
+
+  /* ---------- sticky mobile bar ---------- */
+  .sticky-bar{
+    position:fixed;bottom:0;left:0;right:0;background:#fff;
+    box-shadow:0 -6px 20px rgba(0,0,0,.12);padding:12px 14px;
+    display:none;align-items:center;justify-content:space-between;gap:10px;z-index:50;
+  }
+  .sticky-bar .sticky-price{display:flex;flex-direction:column;justify-content:center;line-height:1.15;flex-shrink:0;}
+  .sticky-bar .sticky-price-old{font-size:.68rem;color:var(--muted);text-decoration:line-through;}
+  .sticky-bar .price{font-weight:800;color:var(--accent);font-size:1.3rem;}
+  .sticky-bar .cta-btn{
+    flex:1;text-align:center;padding:17px 16px;font-size:1.08rem;
+    position:relative;overflow:hidden;
+  }
+  .sticky-bar .cta-btn::after{
+    content:"";position:absolute;top:0;left:-60%;width:35%;height:100%;
+    background:linear-gradient(115deg,transparent,rgba(255,255,255,.5),transparent);
+    transform:skewX(-20deg);pointer-events:none;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .sticky-bar .cta-btn{animation:cta-breathe 2.8s ease-in-out infinite;}
+    .sticky-bar .cta-btn::after{animation:cta-shine 4s ease-in-out infinite;}
+  }
+  @keyframes cta-breathe{
+    0%,100%{box-shadow:0 10px 28px rgba(179,38,30,.32);}
+    50%{box-shadow:0 10px 34px rgba(179,38,30,.48);}
+  }
+  @keyframes cta-shine{
+    0%,55%{left:-60%;}
+    85%,100%{left:130%;}
+  }
+  @media(max-width:640px){
+    .sticky-bar.show{display:flex;}
+    body{padding-bottom:78px;}
+  }
+  .card .bonus-photo img{object-position:top;}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:620px;margin:0 auto;}
+  .gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);}
+  @media(max-width:640px){.gallery{gap:10px;}}
+  .step .step-photo img.contain{object-fit:contain;background:#fff;}
+  header .logo-emoji{font-size:1.7rem;line-height:1;}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="logo-emoji">🎄</span>
+  <span class="brand">Moldes de Cartões de Natal</span>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>300 Moldes de Cartões de Natal para Imprimir</h1>
+    <p class="sub">Imprima, dobre e entregue cartões lindos para a família, os amigos, os clientes e a escola. E ainda transforme isso em renda extra neste Natal, mesmo que você seja iniciante e nunca tenha vendido nada.</p>
+
+    <div class="hero-photo">
+      <img src="assets/img/hero.jpg" alt="Cartões de Natal para imprimir">
+    </div>
+    <div class="hero-info">
+      <p class="hero-pages-badge">📄 329 páginas: 300 cartões + 60 mensagens prontas + 27 etiquetas de presente</p>
+      <h2 class="hero-email-title">📩 Receba tudo em seu email</h2>
+      <p class="hero-email-sub">Receba seu acesso aos materiais por e-mail após a confirmação do pagamento.</p>
+    </div>
+
+    <div class="price-box price-box--attention">
+      <span class="old">De R$ 97</span>
+      <span class="new">R$14,99</span>
+      <span class="installment">por apenas</span>
+    </div>
+    <br>
+    <a href="#oferta" class="cta-btn">Quero os 300 cartões de Natal →</a>
+  </div>
+</section>
+
+<!-- OLHA O QUE VOCÊ VAI IMPRIMIR -->
+<section class="benefits">
+  <div class="container">
+    <p class="section-title">Olha os cartões que você vai imprimir...</p>
+    <div class="carousel-wrap">
+      <div class="carousel" id="cardCarousel">
+        <div class="carousel-item">
+          <img src="assets/img/cartao-classicos.jpg" alt="Cartão de Natal estilo Clássicos de Natal">
+          <p class="cap">Clássicos de Natal</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-elegantes.jpg" alt="Cartão de Natal estilo Elegantes e Dourados">
+          <p class="cap">Elegantes e Dourados</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-fofos.jpg" alt="Cartão de Natal estilo Fofos e Divertidos">
+          <p class="cap">Fofos e Divertidos</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-religiosos.jpg" alt="Cartão de Natal estilo Religiosos e de Fé">
+          <p class="cap">Religiosos e de Fé</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-empresas.jpg" alt="Cartão de Natal estilo Empresas e Clientes">
+          <p class="cap">Empresas e Clientes</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-escola.jpg" alt="Cartão de Natal estilo Professores e Escola">
+          <p class="cap">Professores e Escola</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-inverno.jpg" alt="Cartão de Natal estilo Noites de Inverno">
+          <p class="cap">Noites de Inverno</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-rusticos.jpg" alt="Cartão de Natal estilo Rústicos e Xadrez">
+          <p class="cap">Rústicos e Xadrez</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-anonovo.jpg" alt="Cartão de Natal estilo Boas Festas e Ano Novo">
+          <p class="cap">Boas Festas e Ano Novo</p>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/cartao-colorir.jpg" alt="Cartão de Natal estilo Para Colorir">
+          <p class="cap">Para Colorir</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-classicos.jpg" alt="">
+          <p class="cap">Clássicos de Natal</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-elegantes.jpg" alt="">
+          <p class="cap">Elegantes e Dourados</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-fofos.jpg" alt="">
+          <p class="cap">Fofos e Divertidos</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-religiosos.jpg" alt="">
+          <p class="cap">Religiosos e de Fé</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-empresas.jpg" alt="">
+          <p class="cap">Empresas e Clientes</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-escola.jpg" alt="">
+          <p class="cap">Professores e Escola</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-inverno.jpg" alt="">
+          <p class="cap">Noites de Inverno</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-rusticos.jpg" alt="">
+          <p class="cap">Rústicos e Xadrez</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-anonovo.jpg" alt="">
+          <p class="cap">Boas Festas e Ano Novo</p>
+        </div>
+        <div class="carousel-item" aria-hidden="true">
+          <img src="assets/img/cartao-colorir.jpg" alt="">
+          <p class="cap">Para Colorir</p>
+        </div>
+      </div>
+    </div>
+    <div class="chip-list">
+      <span class="chip">10 estilos diferentes</span>
+      <span class="chip">30 cartões por estilo</span>
+      <span class="chip">Família e amigos</span>
+      <span class="chip">Empresas e clientes</span>
+      <span class="chip">Escola e catequese</span>
+    </div>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="#oferta" class="cta-btn">Quero acessar os 300 cartões →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section>
+  <div class="container" style="text-align:center;">
+    <p class="section-title">Veja com seus próprios olhos: cartões prontos, é só imprimir</p>
+    <p class="section-sub">Cada cartão já vem com frente, verso e mensagem. Você imprime em casa ou na gráfica e entrega no mesmo dia.</p>
+    <div class="gallery">
+      <img src="assets/img/cartao-classicos2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+      <img src="assets/img/cartao-elegantes2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+      <img src="assets/img/cartao-fofos2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+      <img src="assets/img/cartao-inverno2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+      <img src="assets/img/cartao-rusticos2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+      <img src="assets/img/cartao-anonovo2.jpg" alt="Modelo de cartão de Natal para imprimir" loading="lazy">
+    </div>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="#oferta" class="cta-btn">Quero cartões assim também →</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMO USAR -->
+<section>
+  <div class="container">
+    <p class="section-title">Como usar</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-photo">
+          <img class="contain" src="assets/img/passo-imprima.jpg" alt="Página do cartão de Natal pronta para imprimir em A4">
+        </div>
+        <span class="num">1</span>
+        <h3>Imprima</h3>
+        <p>Escolha o cartão e imprima em folha A4 comum. Não precisa de impressora especial.</p>
+      </div>
+      <div class="step">
+        <div class="step-photo">
+          <img src="assets/img/passo-dobre.jpg" alt="Cartão de Natal dobrado">
+        </div>
+        <span class="num">2</span>
+        <h3>Dobre</h3>
+        <p>Recorte na linha e dobre ao meio. O cartão fica no tamanho 13,5 × 19 cm, que cabe em envelope comum.</p>
+      </div>
+      <div class="step">
+        <div class="step-photo">
+          <img class="contain" src="assets/img/passo-entregue.jpg" alt="Envelopes decorados de Natal para imprimir">
+        </div>
+        <span class="num">3</span>
+        <h3>Escreva e entregue</h3>
+        <p>Use uma das 60 mensagens prontas, coloque no envelope decorado e pronto: seu cartão está pronto para presentear!</p>
+      </div>
+    </div>
+    <p class="section-sub" style="margin-top:36px;margin-bottom:0;">
+      <strong style="color:var(--text);">E o resultado?</strong> Cartões lindos para presentear a família, os amigos, os clientes, os professores e muito mais!
+    </p>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="#oferta" class="cta-btn">Quero começar agora →</a>
+    </div>
+  </div>
+</section>
+
+<!-- MANEIRAS DE LUCRAR -->
+<section class="benefits">
+  <div class="container">
+    <p class="section-title">4 Maneiras de lucrar com o kit 300 Moldes de Cartões de Natal</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">01</span>
+        <h3>Venda de cartões</h3>
+        <p>Imprima os modelos, monte kits com envelope e venda pelo WhatsApp, Instagram, marketplaces ou para pessoas da sua região.</p>
+      </div>
+      <div class="card">
+        <span class="tag">02</span>
+        <h3>Cestas de Natal</h3>
+        <p>Monte cestas e caixinhas de presente com o cartão personalizado. O cartão deixa a cesta mais caprichada e valoriza o preço.</p>
+      </div>
+      <div class="card">
+        <span class="tag">03</span>
+        <h3>Cartões para empresas</h3>
+        <p>Lojas, escritórios e prestadores de serviço entregam cartões aos clientes no fim do ano. Você oferece os modelos com espaço para o logo.</p>
+      </div>
+      <div class="card">
+        <span class="tag">04</span>
+        <h3>Escolas e catequese</h3>
+        <p>Cartões da turma para a professora, da escola para as famílias e modelos para colorir que as crianças pintam e entregam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USO EM CASA -->
+<section>
+  <div class="container">
+    <div class="info-box">
+      <h3>Posso usar só para a minha família?</h3>
+      <p><strong style="color:var(--text);">Sim! Surpreenda a todos!</strong> Você também pode usar os 300 cartões de Natal para presentear a sua família, os amigos e quem você ama.</p>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE VOCÊ RECEBE -->
+<section class="benefits">
+  <div class="container">
+    <p class="section-title">O que você recebe hoje</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Arquivo principal</span>
+        <h3>300 Moldes de Cartões de Natal</h3>
+        <p>Uma coleção com 300 cartões em 10 estilos para você imprimir: clássicos, elegantes, fofos, religiosos, para empresas, para a escola, para colorir e muito mais.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Praticidade</span>
+        <h3>Cartões prontos</h3>
+        <p>Em vez de perder horas desenhando ou procurando modelos, você escolhe, imprime e dobra. Frente e verso já vêm no lugar certo.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Sem bloqueio</span>
+        <h3>60 mensagens prontas</h3>
+        <p>Não sabe o que escrever? Escolha uma das 60 mensagens para família, amigos, clientes e professores.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Acabamento</span>
+        <h3>27 etiquetas de presente</h3>
+        <p>Etiquetas para pendurar nos presentes, combinando com os cartões, para deixar tudo com cara de loja.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="#oferta" class="cta-btn">Quero os 300 cartões →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ACESSO IMEDIATO -->
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="container" style="max-width:560px;text-align:center;padding:36px 20px;">
+    <p style="color:var(--muted);font-size:.95rem;">
+      <strong style="color:var(--text);">Acesso imediato.</strong>
+      Acesse os 300 cartões imediatamente após a confirmação do seu pagamento. Depois, é só imprimir e começar a presentear.
+    </p>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section id="bonus" class="benefits">
+  <div class="container">
+    <p class="section-title">Receba 4 bônus grátis:</p>
+    <div class="cards">
+      <div class="card">
+        <div class="bonus-photo"><img src="assets/img/bonus1.jpg" alt="Envelopes decorados de Natal para imprimir"></div>
+        <span class="tag">Bônus 1</span>
+        <h3>Envelopes Decorados</h3>
+        <p>Moldes de envelopes natalinos para imprimir, recortar e colar, combinando com os cartões. Seu cartão chega ainda mais bonito.</p>
+      </div>
+      <div class="card">
+        <div class="bonus-photo"><img src="assets/img/bonus2.jpg" alt="Guia de impressão dos cartões de Natal"></div>
+        <span class="tag">Bônus 2</span>
+        <h3>Guia de Impressão</h3>
+        <p>Qual papel usar, como configurar a impressora e como deixar o cartão com acabamento profissional, mesmo imprimindo em casa.</p>
+      </div>
+      <div class="card">
+        <div class="bonus-photo"><img src="assets/img/bonus3.jpg" alt="Guia de gráficas online"></div>
+        <span class="tag">Bônus 3</span>
+        <h3>Guia de Gráficas Online</h3>
+        <p>Não tem impressora ou quer imprimir em quantidade? Saiba como mandar os cartões para uma gráfica online e receber em casa.</p>
+      </div>
+      <div class="card">
+        <div class="bonus-photo"><img src="assets/img/bonus4.jpg" alt="Ideias de cestas de Natal para ganhar dinheiro"></div>
+        <span class="tag">Bônus 4</span>
+        <h3>Ideias de Cestas de Natal para Ganhar Dinheiro</h3>
+        <p>12 cestas com os itens, o custo, o preço de venda e o cartão do kit que combina. Mesmo que você nunca tenha vendido nada!</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="#oferta" class="cta-btn">Quero os 300 cartões + os 4 bônus →</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUANTO VAI CUSTAR -->
+<section id="oferta">
+  <div class="container">
+    <p class="section-title">Quanto tudo vai custar?</p>
+    <p class="section-sub">
+      Você poderia comprar todo esse material separadamente por R$ 97.<br>
+      Mas hoje você não vai pagar R$ 97.
+    </p>
+    <div class="offer" style="text-align:center;">
+      <div class="price-box price-box--attention" style="margin:0 auto 22px;">
+        <span class="old">De R$ 97 por apenas:</span>
+        <span class="new">R$14,99</span>
+        <span class="installment">Pagamento único.</span>
+      </div>
+      <div>
+        <a href="#oferta" class="cta-btn">Sim! Quero os 300 cartões + 4 bônus →</a>
+      </div>
+      <p class="cta-sub">Acesso imediato após a confirmação do pagamento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section>
+  <div class="container">
+    <p class="section-title">Garantia de satisfação</p>
+    <div class="guarantee">
+      <div class="seal">7</div>
+      <p>Acesse o Kit 300 Moldes de Cartões de Natal para Imprimir e teste. Se você não ficar 100% satisfeita com o material, você tem <strong>7 dias</strong> para pedir seu dinheiro de volta após a sua compra.</p>
+    </div>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="#oferta" class="cta-btn">Quero aproveitar por R$ 14,99 →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>300 Moldes de Cartões de Natal para Imprimir. Produto digital.</p>
+    <p style="margin-top:6px;">Este produto não se relaciona com Facebook, Instagram ou Google. Resultados podem variar de pessoa para pessoa.</p>
+  </div>
+</footer>
+
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-price">
+    <span class="sticky-price-old">De R$97</span>
+    <span class="price price-box--attention">R$14,99</span>
+  </div>
+  <a href="#oferta" class="cta-btn">Comprar agora</a>
+</div>
+
+<script>
+  var sticky = document.getElementById('stickyBar');
+  var heroEl = document.querySelector('.hero');
+  window.addEventListener('scroll', function(){
+    var trigger = heroEl.offsetTop + heroEl.offsetHeight;
+    if(window.scrollY > trigger){
+      sticky.classList.add('show');
+    } else {
+      sticky.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>
