@@ -294,7 +294,20 @@
     .sticky-bar.show{display:flex;}
     body{padding-bottom:78px;}
   }
-  .card .bonus-photo img{object-position:top;}
+  .bonus-sec{background:radial-gradient(circle at 20% 10%,#2a7d52 0%,#14532f 55%,#0e3d22 100%);position:relative;}
+  .bonus-sec::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(#fff 1.5px,transparent 2px),radial-gradient(#fff 1px,transparent 1.5px);
+    background-size:90px 90px,50px 50px;background-position:0 0,25px 30px;}
+  .bonus-sec .container{position:relative;}
+  .bonus-sec .section-title{color:#fff;}
+  .bonus-sec .section-sub{color:#e3f1e8;}
+  .bonus-sec .card{border:none;border-top:6px solid var(--yellow);box-shadow:0 12px 30px rgba(0,0,0,.25);}
+  .bonus-sec .card .bonus-photo{border:none;border-radius:12px;}
+  .bonus-sec .card .tag{background:var(--accent);color:#fff;}
+  .bonus-sec .card h3{color:var(--accent);}
+  .bonus-val{font-size:.9rem;color:var(--muted);margin:-2px 0 8px;}
+  .bonus-val strong{color:var(--green);background:#e5f3ea;padding:2px 10px;border-radius:12px;margin-left:4px;}
+  .bonus-sec .cta-btn{background:var(--yellow);color:#5a1414!important;box-shadow:0 10px 28px rgba(0,0,0,.3);}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:620px;margin:0 auto;}
   .gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);}
   @media(max-width:640px){.gallery{gap:10px;}}
@@ -325,7 +338,7 @@
     </div>
 
     <div class="price-box price-box--attention">
-      <span class="old">De R$ 97</span>
+      <span class="old">De R$ 54</span>
       <span class="new">R$14,99</span>
       <span class="installment">por apenas</span>
     </div>
@@ -575,31 +588,36 @@
 </section>
 
 <!-- BÔNUS -->
-<section id="bonus" class="benefits">
+<section id="bonus" class="bonus-sec">
   <div class="container">
-    <p class="section-title">Receba 4 bônus grátis:</p>
+    <p class="section-title">🎁 Receba 4 bônus grátis:</p>
+    <p class="section-sub">Comprando hoje, você leva tudo isso junto, sem pagar nada a mais.</p>
     <div class="cards">
       <div class="card">
         <div class="bonus-photo"><img src="assets/img/bonus1.jpg" alt="Envelopes decorados de Natal para imprimir"></div>
         <span class="tag">Bônus 1</span>
+        <p class="bonus-val"><s>R$ 19,90</s> <strong>GRÁTIS</strong></p>
         <h3>Envelopes Decorados</h3>
         <p>Moldes de envelopes natalinos para imprimir, recortar e colar, combinando com os cartões. Seu cartão chega ainda mais bonito.</p>
       </div>
       <div class="card">
         <div class="bonus-photo"><img src="assets/img/bonus2.jpg" alt="Guia de impressão dos cartões de Natal"></div>
         <span class="tag">Bônus 2</span>
+        <p class="bonus-val"><s>R$ 12,90</s> <strong>GRÁTIS</strong></p>
         <h3>Guia de Impressão</h3>
         <p>Qual papel usar, como configurar a impressora e como deixar o cartão com acabamento profissional, mesmo imprimindo em casa.</p>
       </div>
       <div class="card">
         <div class="bonus-photo"><img src="assets/img/bonus3.jpg" alt="Guia de gráficas online"></div>
         <span class="tag">Bônus 3</span>
+        <p class="bonus-val"><s>R$ 12,90</s> <strong>GRÁTIS</strong></p>
         <h3>Guia de Gráficas Online</h3>
         <p>Não tem impressora ou quer imprimir em quantidade? Saiba como mandar os cartões para uma gráfica online e receber em casa.</p>
       </div>
       <div class="card">
         <div class="bonus-photo"><img src="assets/img/bonus4.jpg" alt="Ideias de cestas de Natal para ganhar dinheiro"></div>
         <span class="tag">Bônus 4</span>
+        <p class="bonus-val"><s>R$ 19,90</s> <strong>GRÁTIS</strong></p>
         <h3>Ideias de Cestas de Natal para Ganhar Dinheiro</h3>
         <p>12 cestas com os itens, o custo, o preço de venda e o cartão do kit que combina. Mesmo que você nunca tenha vendido nada!</p>
       </div>
@@ -615,12 +633,12 @@
   <div class="container">
     <p class="section-title">Quanto tudo vai custar?</p>
     <p class="section-sub">
-      Você poderia comprar todo esse material separadamente por R$ 97.<br>
-      Mas hoje você não vai pagar R$ 97.
+      Você poderia comprar todo esse material separadamente por R$ 54.<br>
+      Mas hoje você não vai pagar R$ 54.
     </p>
     <div class="offer" style="text-align:center;">
       <div class="price-box price-box--attention" style="margin:0 auto 22px;">
-        <span class="old">De R$ 97 por apenas:</span>
+        <span class="old">De R$ 54 por apenas:</span>
         <span class="new">R$14,99</span>
         <span class="installment">Pagamento único.</span>
       </div>
@@ -655,7 +673,7 @@
 
 <div class="sticky-bar" id="stickyBar">
   <div class="sticky-price">
-    <span class="sticky-price-old">De R$97</span>
+    <span class="sticky-price-old">De R$54</span>
     <span class="price price-box--attention">R$14,99</span>
   </div>
   <a href="#oferta" class="cta-btn">Comprar agora</a>
