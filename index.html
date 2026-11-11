@@ -24,15 +24,6 @@ src="https://www.facebook.com/tr?id=1279382274104112&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<script>
-  // Clique nos botões "Comprar": avisa o pixel, se houver um instalado.
-  document.addEventListener("click", function (ev) {
-    var btn = ev.target.closest(".cta-btn");
-    // Só conta quando o botão leva ao checkout (enquanto apontar para #oferta, não dispara).
-    if (btn && /^https?:/.test(btn.getAttribute("href") || "") && typeof fbq === "function") { try { fbq("track", "InitiateCheckout"); } catch (e) {} }
-  });
-</script>
-
 <style>
   :root{
     --accent:#b3261e;
